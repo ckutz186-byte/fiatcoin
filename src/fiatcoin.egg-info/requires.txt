@@ -1,0 +1,16 @@
+cryptography>=43.0.0
+coincurve>=19.0.0
+plyvel>=1.5.0
+coincurve
+ecdsa
+immutables
+
+[dev]
+pytest>=8.0.0
+hypothesis>=6.0.0
+black>=24.0.0
+ruff>=0.6.0
+isort>=5.13.0
+mypy>=1.8.0
+pre-commit>=3.7.0
+bandit>=1.7.0
