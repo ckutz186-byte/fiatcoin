@@ -1,9 +1,9 @@
 import struct
 from typing import BinaryIO, List
 
-from fiatcoin.core.hash import sha256d
-from fiatcoin.core.serialize import Serializable, safe_read, stream_deserialize_list, stream_deserialize_vlq, stream_serialize_list, stream_serialize_vlq # type: ignore
-from fiatcoin.core.transaction import Transaction
+from fiatcoin.hash import sha256d
+from fiatcoin.serialize import Serializable, safe_read, stream_deserialize_list, stream_deserialize_vlq, stream_serialize_list, stream_serialize_vlq # type: ignore
+from fiatcoin.transaction import Transaction
 
 
 class BlockSummary(Serializable):

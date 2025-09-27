@@ -1,5 +1,5 @@
 import struct
-from fiatcoin.core.hash import sha256d
+from fiatcoin.hash import sha256d
 
 
 def target_from_bits(difficulty_bits: int) -> int:

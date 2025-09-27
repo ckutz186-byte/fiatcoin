@@ -1,7 +1,7 @@
 import struct
 from typing import BinaryIO, Optional, List
-from fiatcoin.core.hash import sha256d
-from fiatcoin.core.serialize import (
+from fiatcoin.hash import sha256d
+from fiatcoin.serialize import (
     Serializable, 
     safe_read, 
     stream_deserialize_list,  # type: ignore

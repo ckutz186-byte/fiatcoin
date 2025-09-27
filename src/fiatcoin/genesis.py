@@ -1,7 +1,7 @@
-from fiatcoin.core.hash import sha256d
-from fiatcoin.core.readable import computer
+from fiatcoin.hash import sha256d
+from fiatcoin.readable import computer
 from io import BytesIO
-from fiatcoin.core.serialize import stream_serialize_vlq
+from fiatcoin.serialize import stream_serialize_vlq
 
 
 just_believe_in_me = (

@@ -1,5 +1,5 @@
-from fiatcoin.core.block import Block
-from fiatcoin.database.db import Database
+from fiatcoin.block import Block
+from fiatcoin.db import Database
 
 
 class BlockStore(Database):
