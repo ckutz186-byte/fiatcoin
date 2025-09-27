@@ -21,7 +21,8 @@ class Wallet:
     
     @property
     def addr(self) -> Address:
-        return self.keypair.address # type: ignore
+        assert self.keypair, "Wallet has no keypair; generate one before accessing address"
+        return self.keypair.address
     
     def dump(self, f: TextIO) -> None:
         assert self.keypair        
@@ -62,6 +63,10 @@ def create_spend_transaction(
     utxo_reference = OutputReference(prev_hash, output_index)
 
     input_value = previous_transaction.outputs[output_index].value
+    
+    if value <= 0:
+        raise ValueError("Spend value must be positive")
+    
     if value > input_value:
         raise ValueError("Spend value exceeds available balance")
 
